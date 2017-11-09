@@ -1,0 +1,52 @@
+Instructions
+------------
+* Use any programming language you are most comfortable writing
+* It is okay if the syntax is not 100% correct
+* You should be able to solve this question using only standard libraries provided by the language
+* The instruction are intentionally ambiguous, just like real-world requirements. You are expected to make some assumptions. Please do so clearly but succinctly.
+
+
+1. Friend of friends
+
+Implement a method in a Person class below to return their friends of friends (or 2nd-degree network - in LinkedIn terminology).
+Example: B is A's friend. C is B's friend. Therefore C is A's friend of friends.
+
+(A) --> B --> C
+
+class Person {
+  String name;
+  List<Person> friends;
+
+  List<Person> friendsOfFriends() {
+    //Implement Me
+  }
+}
+
+Note
+-----
+* Rewrite the Person class in your language that you choose. And implement the method.
+* Friends are 2 ways relationship. If B is A's friend, then A is also B's friend. Does your implementation correctly handle this fact?
+* A's friends should never be shown up as A's friends of friends. Are there any case in your implementation that might happen?
+
+ 
+
+2. Modified Palindrome
+
+A palindrome is a word that read the same in both direction .
+* Example (Palindrome): eye, madam, racecar, noon
+* Example (Not Palindrome): test, abc, anything
+
+Implement a modified palindrome, where it is case insensitive and ignore any non-alphanumeric characters
+Example Modified Palindrome:
+
+_!E#@y#e
+MaDaM!!
+RaCEC@A@R
+
+boolean isPalindrome(String word) {
+}
+
+Note
+-----
+* Rewrite the isPalindrome method in the language that you choose
+* If the string is very long (e.g. 1-billion characters). Is your implementation still efficient?
